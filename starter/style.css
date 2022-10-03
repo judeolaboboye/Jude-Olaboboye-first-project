@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+     color: white;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+.btn {
+    border-radius: 20px;
+     padding: 10px 10px;
+     cursor: pointer;
+
+}
+@keyframes bounce {
+    0%, 25%, 50%, 75%, 100% {
+        transform: translateY(0);
+    }
+    15%,40% {
+        transform: translateY(-20px);
+    }
+    65%,80% {
+        transform: translateY(-15px);
+    }
+    95% {
+        transform: translateY(-5px);
+    }
+}
+.btn-red {
+    color: white;
+    padding: 7px 15px;
+    border: 3px solid tomato;
+    background-color: tomato;
+}
+.btn-red:hover {
+    background-color: gray;
+    border: 2px solid gray;
+    transition: 0.7s;
+    animation: bounce 3s linear;
+}
+.btn-white {
+    /* color: black; */
+    /* font-size: 18px; */
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid white;
+}
+.btn-white:hover {
+    background-color: gray;
+    transition: 0.7s;
+    color: white;
+    border: 2px solid gray;
+    animation: bounce 3s linear;
+}
+/* header section starts here */
+header {
+    background: linear-gradient(to right, rgba(244, 107, 69, 0.2), rgba(238, 168, 73, 0.2)),url("./img/header.jpg");
+    background-size: cover;
+
+    background-position: center;
+    color: white;
+    /* height: 600px; */
+
+}
+header nav {
+    display: flex;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+.nav-leftbar {
+    width: 50%;
+}
+.nav-leftbar h4 {
+    /* padding: 30px 15px 30px 50px; */
+    padding: 20px 0 20px 30px;
+     /* border: 3px solid tomato; */
+     font-size: 20px;
+}
+.nav-rightbar {
+    width: 50%;
+     display: flex;
+    justify-content: space-evenly;
+
+}
+
+.nav-rightbar h4{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+    padding: 20px 15px 20px 15px;
+
+
+}
+.nav-rightbar a {
+    text-decoration: none;
+}
+.nav-rightbar a:hover {
+    color: black;
+    transition: 0.7s ease;
+}
+ .hamburger {
+    width: 35px;
+    position: relative;
+    background: none;
+    outline: none;
+    appearance: none;
+    border: none;
+    display: block;
+    text-align: right;
+    /* border: 3px solid black; */
+    cursor: pointer;
+}
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+
+}
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px,6px);
+}
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px,-8px);
+}
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+.mobile-nav {
+    display: block;
+    position: fixed;
+      margin-top: 60px;
+     /* margin-left: 50%; */
+
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 110px;
+     z-index: 98;
+    background-color: tomato;
+
+    text-align: center;
+    /* padding-top: 150px; */
+
+}
+
+.mobile-nav a {
+    display: block;
+     text-align: left;
+    width: 100%;
+     /* margin: 0 16px; */
+     /* max-width: 200px; */
+     padding: 12px 16px;
+    background-color: tomato;
+    border: 3px solid tomato;
+    color: white;
+    text-decoration: none;
+    /* width: fit-content; */
+    /* color: tomato; */
+    transition: 0.4s;
+}
+.mobile-nav.is-active {
+    left: 0;
+}
+.mobile-nav a:hover {
+    background-color: white;
+    transition: 0.4s;
+    border: 3px solid white;
+    color: tomato;
+}
+.second-section {
+    padding-top: 50px;
+    display: flex;
+}
+.second-section .second-leftsection {
+    width: 50%;
+    /* border: 3px solid black; */
+}
+.second-section .second-rightsection {
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+} .second-rightsection h2 {
+    padding-bottom: 23px;
+}
+.second-rightsection button {
+
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+.first-icon {
+    padding-left: 10px;
+}
+/* /* header section ends here  */
+/* main section starts here */
+main {
+    background-color: white ;
+    padding: 30px 10px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+.small-div {
+    background-color: tomato;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px 4%;
+    margin: 10px 10px;
+}
+
+.a:hover {
+    background-color: black;
+    cursor: grab;
+    transition: 0.7s;
+}
+.small-div h2 {
+     padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.small-div button {
+    color: tomato;
+    padding: 15px ;
+    font-size: 15px;
+    /* margin-top: 30px; */
+}
+.small-div p {
+    /* /* font-weight: bold/ */
+     padding-bottom: 20px;
+
+}
+/* main section ends here */
+/* section starts here */
+section {
+    padding: 25px;
+    background-color: tomato;
+    display: flex;
+    border: 3px solid tomato;
+    align-items: center;
+
+}
+section .third-leftsection {
+
+    width: 50%;
+    padding-left: 10px;
+    font-size: 15px;
+    color: white;
+
+
+}
+section .third-rightsection {
+    text-align: right;
+
+
+    width: 50%;
+}
+.third-rightsection button {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: tomato;
+}
+/* section ends here */
+/* footer section starts here */
+footer {
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    padding: 25px;
+    display: flex;
+    /* font-size: 22px; */
+    padding-left: 4%;
+    padding-right: 5%;
+}
+.fourth-leftsection {
+    width: 50%;
+}
+.fourth-rightsection {
+    width: 50%;
+    text-align: right;
+     font-size: 23px;
+}
+/* footer section ends here */

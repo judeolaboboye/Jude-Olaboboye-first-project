@@ -1,0 +1,88 @@
+@media screen and (max-width: 700px) {
+
+
+
+    header nav {
+        background-color:  tomato;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .nav-rightbar {
+        display: none;
+    }
+    .hamburger {
+        margin-right: 15px;
+    }
+
+    .second-section {
+        padding-top: 100px;
+    }
+    .second-section .second-leftsection {
+        display: none;
+    }
+    .second-section .second-rightsection {
+        width: 100%;
+        /* border: 3px solid black; */
+    }
+    .second-rightsection h2 {
+        font-size: 15px;
+    }
+    .second-rightsection button {
+        margin-top: 17px;
+        margin-bottom: 40px;
+
+
+    }
+    .small-div {
+        width: 90%;
+        padding-left: 10%;
+    }
+    .small-div h2 {
+        padding-bottom: 15px;
+    }
+    .small-div button {
+        padding: 5px 5px;
+        font-size: 15px;
+        color: tomato;
+    }
+    section {
+        padding-left: 4%;
+    }
+    .third-leftsection h2 {
+        font-size: 15px;
+    }
+    .third-rightsection button {
+        padding: 5px 5px;
+        font-size: 15px;
+        color: tomato;
+    }
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 12px;
+    }
+    .fourth-leftsection {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 15px;
+        /* font-size: 13px; */
+    }
+    .fourth-rightsection {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+@media screen and (min-width: 700px) {
+
+.mobile-nav {
+    display: none;
+}
+.hamburger {
+    display: none;
+}
+}
